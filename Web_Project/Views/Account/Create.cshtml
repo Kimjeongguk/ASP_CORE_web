@@ -1,0 +1,31 @@
+﻿<!doctype html>
+@model Web_Project.Models.Users
+<html>
+<head>
+    <title>Sign_in</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form class="box" method="post" asp-controller="Account" asp-action="CreateUser">
+        <h1>회원가입</h1>
+        <div class="form-group">
+            <input type="text" asp-for="UserId" placeholder="User ID" />
+            <span class="text-danger" asp-validation-for="UserId"></span>
+        </div>
+        <div class="form-group">
+            <input type="password" asp-for="UserPassword" placeholder="Password" />
+            <span class="text-danger" asp-validation-for="UserPassword"></span>
+        </div>
+        <div class="form-group">
+            <input type="password" asp-for="UserPassword" placeholder="Password" />
+            <span class="text-danger" asp-validation-for="UserPassword"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">회원가입</button>
+            <a class="btn btn-warning" href="#">취소</a>
+        </div>
+
+    </form>
+</body>
+</html>
