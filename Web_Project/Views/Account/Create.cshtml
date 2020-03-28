@@ -1,9 +1,10 @@
 ﻿<!doctype html>
-@model Web_Project.Models.Users
+@model Web_Project.Models.User
 <html>
 <head>
     <title>Sign_in</title>
     <meta charset="utf-8" />
+    <link href="~/css/account.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -14,16 +15,20 @@
             <span class="text-danger" asp-validation-for="UserId"></span>
         </div>
         <div class="form-group">
-            <input type="password" asp-for="UserPassword" placeholder="Password" />
-            <span class="text-danger" asp-validation-for="UserPassword"></span>
+            <input type="text" asp-for="UserNickname" placeholder="Nickname" />
+            <span class="text-danger" asp-validation-for="UserNickname"></span>
         </div>
         <div class="form-group">
             <input type="password" asp-for="UserPassword" placeholder="Password" />
             <span class="text-danger" asp-validation-for="UserPassword"></span>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">회원가입</button>
-            <a class="btn btn-warning" href="#">취소</a>
+            <input type="password" asp-for="UserPassword" placeholder="Password" />
+            <span class="text-danger" asp-validation-for="UserPassword"></span>
+        </div>
+        <div class="row">
+            <input type="submit" class="btn btn-primary" value="회원가입"/>
+            <input type="button"  value="취소">
         </div>
 
     </form>

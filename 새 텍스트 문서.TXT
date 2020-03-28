@@ -1,0 +1,9 @@
+EntityFramework Core설치
+EntityFramework Core.SqulServer설치
+EntityFramework Core.Tools설치(migracion할때 필요)
+DbContext 생성(Table을 생성할수있는 코드 작성.)
+EntityFramework Core
+
+
+code first
+model class -> Dbcontext-> 실제 테이블 생성

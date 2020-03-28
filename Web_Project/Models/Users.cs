@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 
 namespace Web_Project.Models
 {
-    public class Users
+    public class User
     {
-        [Key] [Column(Order=1)]
+        [Key]
+        [Column(Order =1)]
         public int UserNo { get; set; }
-        [Required]
+        [Key]
+        [Column(Order = 2)]
         public string UserId { get; set; }
         [Required]
         public string UserPassword { get; set; }
-        [Key] [Column(Order=2)]
+        [Required]
         public string UserNickname { get; set; }
     }
 }
